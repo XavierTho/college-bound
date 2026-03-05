@@ -139,9 +139,6 @@ Check if this is a course lesson and determine which course context to use
         <div class="lesson-header">
           <h1>{{ page.title | escape }}</h1>
           <div class="lesson-meta">
-            {%- if page.show_reading_time != false -%}
-            <span><i class="fas fa-clock"></i> {% include reading_time.html %}</span>
-            {%- endif -%}
             {% if page.assignment %}
             <span>•</span>
             <span><i class="fas fa-file-alt"></i> Assignment</span>
@@ -1296,9 +1293,6 @@ Check if this is a course lesson and determine which course context to use
         <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
       {%- if forloop.last == false %}, {% endif -%}
       {% endfor %}
-      {%- endif -%}
-      {%- if page.show_reading_time != false -%}
-      • {% include reading_time.html -%}
       {%- endif -%}
     </p>
     <h3>{{ page.title | escape }}</h3>
