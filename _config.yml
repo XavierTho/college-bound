@@ -20,7 +20,7 @@ description:
 owner_name: College Bound
 github_username: XavierTho
 github_repo: "college-bound"
-baseurl: "/college-bound/" 
+baseurl: "/college-bound" 
 future: true
 
 # Exclude from Jekyll watch - these are processed by our conversion scripts
